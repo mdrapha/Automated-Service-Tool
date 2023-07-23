@@ -1,0 +1,23 @@
+1- Atendimento ao Cliente
+    1.1 - Cliente em primeiro contato
+        1.1.1 - Quer comprar
+        1.1.2 - Conhecer os produtos
+        1.1.3 - Duvidas sobre o produto
+        1.1.4 - Duvidas sobre a entrega
+        1.1.5 - Duvidas sobre o atendimento
+        1.1.6 - Finalização de compra
+                1.1.6.1 - Sugerir produtos
+                1.1.6.2 - Confirmar dados / endereço / produto / valor total
+                        1.1.6.2.1 - Cadastrar cliente ou confirmar cadastro
+                1.1.6.3 - Sugerir formas de pagamento
+                1.1.6.4 - Confirmar forma de pagamento
+                1.1.6.5 - Confirmar pagamento
+                1.1.6.7 - Liberar pedido
+
+
+    1.2 - Cliente em contato posterior
+        1.1.1 - Consulta de pedido
+        1.1.2 - Finalização de compra
+        1.1.3 - Reclamação sobre produto
+        1.1.4 - Reclamação sobre entrega
+        1.1.5 - Reclamação sobre atendimento
