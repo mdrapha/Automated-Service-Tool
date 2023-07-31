@@ -4,15 +4,12 @@ import apikey
 
 openai.api_key = apikey.get_key()
 
-<<<<<<< HEAD
 if openai.api_key is None:
     print(
         "Não foi possível obter a API key. Por favor, verifique se o arquivo key_openai.txt está no diretório correto."
     )
     exit()
 
-=======
->>>>>>> 1ba6d5ca34ce0a4cd2f7856f2ffa3c302486f39f
 # Função para interagir com o modelo e obter a resposta do chatbot
 def obter_resposta(mensagens):
     try:
@@ -26,13 +23,9 @@ def obter_resposta(mensagens):
             frequency_penalty=0,
             presence_penalty=0,
         )
-<<<<<<< HEAD
-        content = resposta["choices"][0]["message"]["content"]
-        return content
-=======
 
+        content = resposta["choices"][0]["message"]["content"]
         return resposta.choices[0].message.content.strip()
->>>>>>> 1ba6d5ca34ce0a4cd2f7856f2ffa3c302486f39f
 
     except Exception as e:
         # Lidar com exceções se ocorrerem erros durante a interação com a API
@@ -52,9 +45,14 @@ def atendimento_ao_cliente():
             break
 
         # Definir as mensagens para a API do ChatCompletion
-        mensagens = [{"role": "system","content": "Você é um assistente útil."}, 
-         {"role": "system","content": "Você será o atendente de uma loja de eletrônicos (pode assumir que todos os itens existem e dar valores ficticios aos mesmos.)"},
-         {"role": "user", "content": pergunta}]
+        mensagens = [
+            {"role": "system", "content": "Você é um assistente útil."},
+            {
+                "role": "system",
+                "content": "Você será o atendente de uma loja de eletrônicos (pode assumir que todos os itens existem e dar valores ficticios aos mesmos.)",
+            },
+            {"role": "user", "content": pergunta},
+        ]
 
         # Obter a resposta do chatbot com base na pergunta do cliente
         resposta = obter_resposta(mensagens)
